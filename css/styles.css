@@ -9,6 +9,7 @@
     --logo-black-color: #000000;
     --portfolio-border:#EEEEEE;
     --header-border: #ECECEC;
+    --bg-hero-color: #C4C4C4;
     --card-set-gap: 30px;
 }
 
@@ -162,10 +163,20 @@ img {
 /* Герой */
 
 .hero {
-    background-color: var(--footer-background-color);
+    height: 600px;
+    max-width: 1600px;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-img.jpg');
+
+    /* background-color: var(--bg-hero-color); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-title {
