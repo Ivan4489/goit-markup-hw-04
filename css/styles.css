@@ -308,7 +308,7 @@ img {
 
 .employee-card {
     width: 270px;
-    height: 368px;
+    min-height: 368px;
     border-radius: 0px 0px 4px 4px;
 
     background-color: var(--header-background-color);
@@ -336,6 +336,13 @@ img {
     line-height: 1.19;
 
     letter-spacing: 0.03em;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: space-evenly;
+
+    list-style: none;
 }
 
 /* Футер */
