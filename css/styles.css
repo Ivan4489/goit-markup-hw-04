@@ -135,7 +135,7 @@ img {
     list-style-type: none; 
 }
 
-.item {
+.contacts-list > .item {
     display: flex;
     align-items: center;
 }
@@ -237,6 +237,10 @@ img {
     justify-content: space-between;
 
     list-style-type: none;
+}
+
+.benefits-list .icon {
+    margin-bottom: 30px;
 }
 
 .benefit-title {
