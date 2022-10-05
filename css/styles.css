@@ -10,6 +10,7 @@
     --portfolio-border:#EEEEEE;
     --header-border: #ECECEC;
     --bg-hero-color: #C4C4C4;
+    --icon-borders: #AFB1B8;
     --card-set-gap: 30px;
 }
 
@@ -332,9 +333,10 @@ img {
 }
 
 .position {
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.19;
-
     letter-spacing: 0.03em;
 }
 
@@ -343,6 +345,47 @@ img {
     justify-content: space-evenly;
 
     list-style: none;
+}
+
+.social-networks > .item {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    outline: 1px dotted purple;
+}
+
+.social-networks > .item:hover {
+    background-color: var(--accent-color);
+    fill: var(--header-background-color);
+}
+
+/* Постійні клієнти */
+
+.clients-head {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--headlines);
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.clients-list > .item {
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid var(--icon-borders);
+    border-radius: 4px;
 }
 
 /* Футер */
