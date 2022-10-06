@@ -59,7 +59,8 @@ img {
     margin-bottom: 0px;
 }
 
-.header > .container {
+.header > .container,
+.footer > .container {
     display: flex;
     /* align-items: center; */
 }
@@ -355,7 +356,8 @@ img {
     outline: 1px dotted purple;
 }
 
-.social-networks > .item:hover {
+.social-networks > .item:hover
+.social-networks > .item:focus {
     background-color: var(--accent-color);
     fill: var(--header-background-color);
 }
@@ -397,6 +399,10 @@ img {
     background-color: var(--footer-background-color);
 }
 
+.footer .address {
+    margin-right: 70px;
+}
+
 .logo-footer {
     display: inline-block;
     margin-bottom: 20px;
@@ -411,7 +417,7 @@ img {
     text-decoration: none;    
 }
 
-.address {
+.location {
     margin-bottom: 9px;
 
     font-style: normal;
@@ -425,10 +431,6 @@ img {
 .contacts-footer-list {
     list-style-type: none;
 }
-
-/* .contacts-footer-list:not(the-last-child) {
-    margin-bottom: 9px;
-} */
 
 .footer-contact {
     font-style: normal;
@@ -449,6 +451,42 @@ img {
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--accent-color);
+}
+
+.social-head {
+    margin-bottom: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-background-color);
+}
+
+.social-list {
+    display: flex;
+
+    list-style: none;
+}
+
+.social-list .item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: red;
+}
+
+.social-list .item + .item {
+    margin-left: 10px;
+}
+
+.social-list .item:hover,
+.social-list .item:focus {
+    background-color: var(--accent-color);
 }
 
 /* Портфоліо */
