@@ -396,12 +396,20 @@ img {
     list-style: none;
 }
 
-.clients-list > .item {
+.clients-list .icon {
     width: 170px;
     height: 92px;
 
-    border: 1px solid var(--icon-borders);
+    border: 1px solid var(--icon-color);
     border-radius: 4px;
+    color: var(--icon-color);
+}
+
+.clients-list .icon:hover,
+.clients-list .icon:focus {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    color: var(--accent-color);
 }
 
 /* Футер */
