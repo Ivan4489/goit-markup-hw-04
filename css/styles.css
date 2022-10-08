@@ -148,6 +148,7 @@ img {
 
 .contacts-list .icon {
     margin-right: 10px;
+    fill: currentColor;
 }
 
 .email,
@@ -170,6 +171,11 @@ img {
 .tel:focus {
     color: var(--accent-color);
 }
+
+.contact-container {
+    display: flex;
+    align-items: center;
+  }
 
 /* Герой */
 
@@ -343,7 +349,7 @@ img {
 
 .social-networks {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     list-style: none;
 }
@@ -359,7 +365,6 @@ img {
 .social-networks > .item:hover
 .social-networks > .item:focus {
     background-color: var(--accent-color);
-    fill: var(--header-background-color);
 }
 
 /* Постійні клієнти */
@@ -478,14 +483,15 @@ img {
     border-radius: 50%;
 
     background-color: red;
+    cursor: pointer;
 }
 
 .social-list .item + .item {
     margin-left: 10px;
 }
 
-.social-list .item:hover,
-.social-list .item:focus {
+.social-list .icon:hover,
+.social-list .icon:focus {
     background-color: var(--accent-color);
 }
 
