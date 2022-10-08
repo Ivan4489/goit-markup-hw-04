@@ -83,7 +83,6 @@ img {
     letter-spacing: 0.03em;
     color: var(--logo-black-color);
     text-decoration: none;
-
 }
 
 .accent {
@@ -367,7 +366,6 @@ img {
 
     color: var(--icon-color);
     border-radius: 50%;
-    outline: 1px dotted purple;
 }
 
 .social-networks .link:hover,
@@ -488,27 +486,12 @@ img {
     color: var(--header-background-color);
 }
 
-.social-list {
-    display: flex;
-    width: 206px;
-    height: 44px;
-    justify-content: space-between;
-
-    list-style: none;
-}
-
-.social-list .item {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-
+.footer .link {
     background-color: rgba(255, 255, 255, 0.1);
-    color: var(--icon-color);
-    cursor: pointer;
 }
 
-.social-list .item:hover,
-.social-list .item:focus {
+.social-list .link:hover,
+.social-list .link:focus {
     background-color: var(--accent-color);
     color: var(--header-background-color);
 }
@@ -554,6 +537,7 @@ img {
 
     background-color: var(--accent-color);
     color: var(--header-background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Portfolio-list */
@@ -583,6 +567,10 @@ img {
 
     background-color: var(--header-background-color);
     border: 1px solid var(--portfolio-border);
+}
+
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-card-content {
