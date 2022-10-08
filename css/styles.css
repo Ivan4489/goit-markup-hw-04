@@ -247,11 +247,13 @@ img {
 }
 
 .benefits-list .icon-div {
+    display: flex;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-
-    
+    justify-content: center;
+    align-items: center;
+  
     border-radius: 4px;
     background-color: var(--background-secondary-color);
 }
@@ -352,6 +354,8 @@ img {
     letter-spacing: 0.03em;
 }
 
+/* Соціальні мережі команди */
+
 .social-networks {
     display: flex;
     justify-content: space-around;
@@ -369,9 +373,14 @@ img {
     width: 44px;
     height: 44px;
     justify-content: center;
+    align-items: center;
 
     color: var(--icon-color);
     border-radius: 50%;
+}
+
+.social-networks .icon {
+    fill: currentColor;
 }
 
 .social-networks .link:hover,
@@ -400,20 +409,26 @@ img {
     list-style: none;
 }
 
-.clients-list .icon {
+.clients-list .link {
+    display: flex;
     width: 170px;
     height: 92px;
+    justify-content: center;
+    align-items: center;
 
     border: 1px solid var(--icon-color);
     border-radius: 4px;
     color: var(--icon-color);
 }
 
-.clients-list .icon:hover,
-.clients-list .icon:focus {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
+.clients-list .link:hover,
+.clients-list .link:focus {
+    border-color: var(--accent-color);
     color: var(--accent-color);
+}
+
+.clients-list .icon {
+    fill: currentColor;
 }
 
 /* Футер */
@@ -539,7 +554,7 @@ img {
 
 .secondary-button:hover,
 .secondary-button:focus {
-    padding: 6px 25px;
+    /* padding: 6px 25px; - можливо помилка*/
 
     background-color: var(--accent-color);
     color: var(--header-background-color);
