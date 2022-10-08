@@ -440,6 +440,10 @@ img {
     background-color: var(--footer-background-color);
 }
 
+.footer .container {
+    align-items: baseline;
+}
+
 .footer .address {
     margin-right: 70px;
 }
