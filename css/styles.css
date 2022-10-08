@@ -10,7 +10,7 @@
     --portfolio-border:#EEEEEE;
     --header-border: #ECECEC;
     --bg-hero-color: #C4C4C4;
-    --icon-borders: #AFB1B8;
+    --icon-color: #AFB1B8;
     --card-set-gap: 30px;
 }
 
@@ -350,21 +350,30 @@ img {
 .social-networks {
     display: flex;
     justify-content: space-around;
+    width: 206px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+
 
     list-style: none;
 }
 
-.social-networks > .item {
+.social-networks .link {
+    display: flex;
     width: 44px;
     height: 44px;
+    justify-content: center;
 
+    color: var(--icon-color);
     border-radius: 50%;
     outline: 1px dotted purple;
 }
 
-.social-networks > .item:hover
-.social-networks > .item:focus {
+.social-networks .link:hover,
+.social-networks .link:focus {
     background-color: var(--accent-color);
+    color: var(--header-background-color);
 }
 
 /* Постійні клієнти */
