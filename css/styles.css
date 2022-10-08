@@ -490,6 +490,9 @@ img {
 
 .social-list {
     display: flex;
+    width: 206px;
+    height: 44px;
+    justify-content: space-between;
 
     list-style: none;
 }
@@ -499,17 +502,15 @@ img {
     height: 44px;
     border-radius: 50%;
 
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--icon-color);
     cursor: pointer;
 }
 
-.social-list .item + .item {
-    margin-left: 10px;
-}
-
-.social-list .icon:hover,
-.social-list .icon:focus {
+.social-list .item:hover,
+.social-list .item:focus {
     background-color: var(--accent-color);
+    color: var(--header-background-color);
 }
 
 /* Портфоліо */
