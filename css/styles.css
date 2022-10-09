@@ -513,6 +513,7 @@ img {
 
 .footer .link {
     background-color: rgba(255, 255, 255, 0.1);
+    color: var(--header-background-color);
 }
 
 .social-list .link:hover,
